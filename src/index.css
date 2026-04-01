@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  @apply bg-pink-50 text-slate-800 min-h-screen;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20;
+}
+
+.gradient-bg {
+  @apply bg-linear-to-br from-blue-50 to-sky-100;
+}
+
+/* Legacy color overrides for html2canvas compatibility (avoids oklch) */
+.report-page {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.report-header-title {
+  color: #004a99 !important;
+}
+
+.report-table-header {
+  background-color: #f8f9fa !important;
+}
+
+.report-border {
+  border-color: #000000 !important;
+}
+
+.report-text-muted {
+  color: #475569 !important;
+}
+
+.report-link {
+  color: #2563eb !important;
+}
